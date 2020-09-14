@@ -1,0 +1,387 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Quicksand&display=swap');
+
+/*main*/
+body {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #629b43;
+}
+
+header {
+    position: absolute;
+    width: 1006px;
+    height: 170px;
+    left: 255px;
+    top: 223px;
+}
+
+main {
+    position: absolute;
+    width: 1319px;
+    height: 2388px;
+    left: 100px;
+    top: 505px;
+
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: 236px;
+    left: 0px;
+    top: 2893px;
+}
+
+/*/main*/
+
+
+/*blocks*/
+.headerBlock {
+    position: absolute;
+    width: 960px;
+    height: 109.68px;
+    left: 23px;
+    top: 30px;
+
+    background: #BCD775;
+    border-radius: 11px;
+    
+}
+
+.historyBlock {
+    position: absolute;
+    width: 960px;
+    height: 350px;
+    left: 179px;
+    top: 86px;
+
+    background: #BCD775;
+    border-radius: 11px;
+}
+
+.quoteBlock {
+    position: absolute;
+    width: 960px;
+    height: 156px;
+    left: 179px;
+    top: 534px;
+
+    background: #BCD775;
+    border-radius: 11px;
+}
+
+.goodBlock {
+    position: absolute;
+    width: 360px;
+    height: 415px;
+    left: 879px;
+    top: 897px;
+
+    background: #BCD775;
+    border-radius: 11px;
+}
+
+.badBlock {
+    position: absolute;
+    width: 360px;
+    height: 415px;
+    left: 879px;
+    top: 1359px;
+
+    background: #BCD775;
+    border-radius: 11px;
+}
+
+.animalBlock {
+    position: absolute;
+    width: 360px;
+    height: 450px;
+    left: 879px;
+    top: 1822px;
+
+    background: #BCD775;
+    border-radius: 11px;
+}
+
+.codeBlock {
+    position: absolute;
+    width: 760px;
+    height: 877px;
+    left: 79px;
+    top: 897px;
+
+    background: #BCD775;
+    border-radius: 11px;
+}
+
+.footerBlock {
+    position: absolute;
+    width: 100%;
+    height: 170px;
+    left: 0px;
+    top: 66px;
+
+    background: #2D4D37;
+}
+
+.animalAside {
+    position: absolute;
+    width: 333px;
+    height: 241px;
+    left: 14px;
+    top: 200px;
+}
+
+.swordsAndShovelsBlock {
+    position: absolute;
+    width: 700px;
+    height: 360px;
+    left: 36px;
+    top: 208px;
+}
+/*/blocks*/
+
+
+/*fonts*/
+.headerH1 {
+    position: absolute;
+    width: 853.71px;
+    height: 48px;
+    left: 69.57px;
+    top: 20px;
+
+    font-family: 'Press Start 2P', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #2D4D37;
+}
+
+.historyH1 {
+    position: absolute;
+    width: 324px;
+    height: 36px;
+    left: 318px;
+    top: 54px;
+
+    font-family: 'Press Start 2P', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+
+    color: #2D4D37;
+}
+
+.historyP {
+    position: absolute;
+    width: 769.99px;
+    height: 150px;
+    left: 95px;
+    top: 140px;
+
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+
+    color: #2D4D37;
+}
+
+q {
+    position: absolute;
+    width: 691px;
+    height: 96px;
+    left: 134px;
+    top: 25px; 
+
+    font-family: 'Press Start 2P', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+
+    color: #2D4D37;
+}
+
+.authorQuote {
+    position: absolute;
+    width: 252px;
+    height: 18px;
+    left: 650px;
+    bottom: -5px;
+
+    font-family: 'Press Start 2P', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+
+    text-align: center;
+    color: #2D4D37;
+}
+
+.goodH1 {
+    position: absolute;
+    width: 144px;
+    height: 36px;
+    left: 108px;
+    top: 70px;
+
+    font-family: 'Press Start 2P', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+
+    text-align: center;
+    color: #2D4D37;
+}
+
+.goodUl {
+    position: absolute;
+    width: 251px;
+    height: 234px;
+    left: 57px;
+    top: 165px;
+}
+
+.badH1 {
+    position: absolute;
+    width: 108px;
+    height: 36px;
+    left: 126px;
+    top: 70px;
+
+    font-family: 'Press Start 2P', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+
+    text-align: center;
+    color: #2D4D37;
+}
+
+.badUl {
+    position: absolute;
+    width: 245px;
+    height: 234px;
+    left: 57px;
+    top: 165px;
+}
+
+li {
+
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: #2D4D37;
+}
+
+.animalH1 {
+    position: absolute;
+    width: 216px;
+    height: 72px;
+    left: 72px;
+    top: 70px;
+
+    font-family: 'Press Start 2P', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+
+    text-align: center;
+    color: #2D4D37;
+}
+
+
+
+.animalPre {
+    font-size: 10px;
+    text-align: center;
+    color: #2D4D37;
+}
+
+.codeH1 {
+    position: absolute;
+    width: 396px;
+    height: 36px;
+    left: 182px;
+    top: 70px;
+
+    font-family: 'Press Start 2P', cursive;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+
+    text-align: center;
+    color: #2D4D37;
+}
+
+.swordsAndShovelsP {
+    position: absolute;
+    width: 704px;
+    height: 155px;
+    left: 32px;
+    top: 612px;
+
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 45px;
+    text-align: center;
+
+    color: #2D4D37;
+}
+/*/fonts*/
+
+/*contact*/
+.navFooter {
+    position: absolute;
+    width: 1358px;
+    height: 105px;
+    left: 41px;
+    top: 35px;
+}
+
+.vkImg {
+    position: absolute;
+    width: 33.1px;
+    height: 30px;
+    left: 164px;
+    top: 35px;
+}
+
+.gitImg {
+    position: absolute;
+    width: 33.1px;
+    height: 30px;
+    left: 700px;
+    top: 35px;
+}
+
+.telegramImg {
+    position: absolute;
+    width: 33.1px;
+    height: 30px;
+    right: 81px;
+    top: 35px;
+}
+
+/*/contact*/
