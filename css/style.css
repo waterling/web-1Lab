@@ -84,7 +84,7 @@ select {
 body {
     position: relative;
     width: 1519px;
-    height: 100%;
+    height: 3129px;
     background-image: url("../recources/BackGround.png");
     background-attachment: fixed;
     background-position-x: 20%;
@@ -96,16 +96,16 @@ header {
     position: absolute;
     width: 1006px;
     height: 170px;
-    left: 255px;
-    top: 223px;
+    margin-left: 255px;
+    margin-top: 223px;
 }
 
 main {
     position: absolute;
     width: 1319px;
     height: 2388px;
-    left: 100px;
-    top: 505px;
+    margin-left: 100px;
+    margin-top: 505px;
 
 }
 
@@ -113,8 +113,8 @@ footer {
     position: absolute;
     width: 1519px;
     height: 236px;
-    left: 0px;
-    top: 2893px;
+    margin-left: 0px;
+    margin-top: 2893px;
 }
 
 /*/main*/
@@ -122,11 +122,11 @@ footer {
 
 /*blocks*/
 .headerBlock {
-    position: absolute;
+    position: relative;
     width: 960px;
     height: 109.68px;
-    left: 23px;
-    top: 30px;
+    margin-left: 23px;
+    margin-top: 30px;
 
     background: #BCD775;
     border-radius: 11px;
@@ -137,8 +137,8 @@ footer {
     position: absolute;
     width: 960px;
     height: 350px;
-    left: 179px;
-    top: 86px;
+    margin-left: 179px;
+    margin-top: 86px;
 
     background: #BCD775;
     border-radius: 11px;
@@ -148,8 +148,8 @@ footer {
     position: absolute;
     width: 960px;
     height: 156px;
-    left: 179px;
-    top: 534px;
+    margin-left: 179px;
+    margin-top: 534px;
 
     background: #BCD775;
     border-radius: 11px;
@@ -159,8 +159,8 @@ footer {
     position: absolute;
     width: 360px;
     height: 415px;
-    left: 879px;
-    top: 897px;
+    margin-left: 879px;
+    margin-top: 897px;
 
     background: #BCD775;
     border-radius: 11px;
@@ -170,8 +170,8 @@ footer {
     position: absolute;
     width: 360px;
     height: 415px;
-    left: 879px;
-    top: 1359px;
+    margin-left: 879px;
+    margin-top: 1359px;
 
     background: #BCD775;
     border-radius: 11px;
@@ -181,8 +181,8 @@ footer {
     position: absolute;
     width: 360px;
     height: 450px;
-    left: 879px;
-    top: 1822px;
+    margin-left: 879px;
+    margin-top: 1822px;
 
     background: #BCD775;
     border-radius: 11px;
@@ -192,8 +192,8 @@ footer {
     position: absolute;
     width: 760px;
     height: 877px;
-    left: 79px;
-    top: 897px;
+    margin-left: 79px;
+    margin-top: 897px;
 
     background: #BCD775;
     border-radius: 11px;
@@ -203,37 +203,34 @@ footer {
     position: absolute;
     width: 100%;
     height: 170px;
-    left: 0px;
-    top: 66px;
+    margin-left: 0px;
+    margin-top: 66px;
 
     background: #2D4D37;
 }
 
 .animalAside {
-    position: absolute;
-    width: 333px;
-    height: 241px;
-    left: 14px;
-    top: 150px;
+    width: 343px;
+    height: 251px;
+    padding-left: 10px;
+    padding-top: 10px;
 }
 
 .swordsAndShovelsBlock {
-    position: absolute;
-    width: 700px;
-    height: 360px;
-    left: 36px;
-    top: 208px;
+    width: 736px;
+    height: 500px;
+    padding-left: 36px;
+    padding-top: 140px;
 }
 /*/blocks*/
 
 
 /*fonts*/
 .headerH1 {
-    position: absolute;
-    width: 853.71px;
-    height: 48px;
-    left: 69.57px;
-    top: 30px;
+    width: 906.71px;
+    height: 79px;
+    padding-left: 53px;
+    padding-top: 31px;
 
     font-family: 'Press Start 2P', cursive;
     font-style: normal;
@@ -246,11 +243,10 @@ footer {
 }
 
 .historyH1 {
-    position: absolute;
-    width: 324px;
-    height: 36px;
-    left: 318px;
-    top: 54px;
+    width: 642px;
+    height: 90.32px;
+    padding-left: 318px;
+    padding-top: 54.32px;
 
     font-family: 'Press Start 2P', cursive;
     font-style: normal;
@@ -262,11 +258,11 @@ footer {
 }
 
 .historyP {
-    position: absolute;
-    width: 769.99px;
-    height: 150px;
-    left: 95px;
-    top: 170px;
+    width: 865px;
+    height: 199.68px;
+
+    padding-left: 95px;
+    padding-top: 49.68px;
 
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
@@ -282,8 +278,8 @@ q {
     position: absolute;
     width: 691px;
     height: 96px;
-    left: 134px;
-    top: 25px; 
+    margin-left: 134px;
+    margin-top: 25px; 
 
     font-family: 'Press Start 2P', cursive;
     font-style: normal;
@@ -296,11 +292,10 @@ q {
 }
 
 .authorQuote {
-    position: absolute;
-    width: 252px;
-    height: 18px;
-    left: 650px;
-    bottom: 15px;
+    width: 952px;
+    height: 139px;
+    padding-left: 700px;
+    padding-top: 121px;
 
     font-family: 'Press Start 2P', cursive;
     font-style: normal;
@@ -313,11 +308,10 @@ q {
 }
 
 .goodH1 {
-    position: absolute;
-    width: 144px;
-    height: 36px;
-    left: 108px;
-    top: 70px;
+    width: 252px;
+    height: 106px;
+    padding-left: 108px;
+    padding-top: 70px;
 
     font-family: 'Press Start 2P', cursive;
     font-style: normal;
@@ -330,19 +324,17 @@ q {
 }
 
 .goodUl {
-    position: absolute;
-    width: 251px;
-    height: 234px;
-    left: 57px;
-    top: 165px;
+    width: 308px;
+    height: 293px;
+    padding-left: 57px;
+    padding-top: 59px;
 }
 
 .badH1 {
-    position: absolute;
-    width: 108px;
-    height: 36px;
-    left: 126px;
-    top: 70px;
+    width: 234px;
+    height: 106px;
+    padding-left: 126px;
+    padding-top: 70px;
 
     font-family: 'Press Start 2P', cursive;
     font-style: normal;
@@ -355,15 +347,13 @@ q {
 }
 
 .badUl {
-    position: absolute;
-    width: 245px;
-    height: 234px;
-    left: 57px;
-    top: 165px;
+    width: 302px;
+    height: 340px;
+    padding-left: 57px;
+    padding-top: 59px;
 }
 
 li {
-
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -374,11 +364,10 @@ li {
 }
 
 .animalH1 {
-    position: absolute;
-    width: 216px;
-    height: 72px;
-    left: 72px;
-    top: 70px;
+    width: 288px;
+    height: 142px;
+    padding-left: 72px;
+    padding-top: 70px;
 
     font-family: 'Press Start 2P', cursive;
     font-style: normal;
@@ -391,18 +380,16 @@ li {
 }
 
 .animalPre {
-    
     font-size: 10px;
     text-align: center;
     color: #2D4D37;
 }
 
 .codeH1 {
-    position: absolute;
-    width: 396px;
-    height: 36px;
-    left: 182px;
-    top: 70px;
+    width: 578px;
+    height: 106px;
+    padding-left: 182px;
+    padding-top: 70px;
 
     font-family: 'Press Start 2P', cursive;
     font-style: normal;
@@ -415,11 +402,10 @@ li {
 }
 
 .swordsAndShovelsP {
-    position: absolute;
-    width: 704px;
-    height: 155px;
-    left: 32px;
-    top: 670px;
+    width: 736px;
+    height: 225px;
+    padding-left: 32px;
+    padding-top: 70px;
 
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
@@ -437,32 +423,32 @@ li {
     position: absolute;
     width: 1358px;
     height: 105px;
-    left: 41px;
-    top: 35px;
+    margin-left: 41px;
+    margin-top: 35px;
 }
 
 .vkImg {
     position: absolute;
     width: 33.1px;
     height: 30px;
-    left: 164px;
-    top: 35px;
+    margin-left: 164px;
+    margin-top: 35px;
 }
 
 .gitImg {
     position: absolute;
     width: 33.1px;
     height: 30px;
-    left: 700px;
-    top: 35px;
+    margin-left: 700px;
+    margin-top: 35px;
 }
 
 .telegramImg {
     position: absolute;
     width: 33.1px;
     height: 30px;
-    right: 81px;
-    top: 35px;
+    margin-left: 1245px;
+    margin-top: 35px;
 }
 
 /*/contact*/
