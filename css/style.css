@@ -75,14 +75,13 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
 /*/Обнуление стилей css*/
 
 
 
 /*main*/
 body {
-    position: relative;
+    float: left;
     width: 1519px;
     height: 3129px;
     background-image: url("../recources/BackGround.png");
@@ -90,10 +89,12 @@ body {
     background-position-x: 20%;
     background-position-y: 40%;
     background-repeat: no-repeat;
+
+    
 }
 
 header {
-    position: absolute;
+    float: left;
     width: 1006px;
     height: 170px;
     margin-left: 255px;
@@ -101,20 +102,20 @@ header {
 }
 
 main {
-    position: absolute;
+    float: left;
     width: 1319px;
     height: 2388px;
     margin-left: 100px;
-    margin-top: 505px;
-
+    margin-top: 105px;
 }
 
 footer {
-    position: absolute;
+    float: left;
     width: 1519px;
-    height: 236px;
-    margin-left: 0px;
-    margin-top: 2893px;
+    height: 136px;
+    margin-top: 10%;
+    
+    background: #2D4D37;
 }
 
 /*/main*/
@@ -199,16 +200,6 @@ footer {
     border-radius: 11px;
 }
 
-.footerBlock {
-    position: absolute;
-    width: 100%;
-    height: 170px;
-    margin-left: 0px;
-    margin-top: 66px;
-
-    background: #2D4D37;
-}
-
 .animalAside {
     width: 343px;
     height: 251px;
@@ -267,7 +258,7 @@ footer {
     font-family: 'Quicksand', sans-serif;
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 30px;
     text-align: center;
 
@@ -420,35 +411,29 @@ li {
 
 /*contact*/
 .navFooter {
-    position: absolute;
-    width: 1358px;
-    height: 105px;
-    margin-left: 41px;
-    margin-top: 35px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.vkImg {
-    position: absolute;
+#VK {
     width: 33.1px;
     height: 30px;
-    margin-left: 164px;
-    margin-top: 35px;
+    background-image: url(../recources/vk.png);
 }
 
-.gitImg {
-    position: absolute;
+#GIT {
     width: 33.1px;
     height: 30px;
-    margin-left: 700px;
-    margin-top: 35px;
+
+    background-image: url(../recources/github.png);
 }
 
-.telegramImg {
-    position: absolute;
+#TG {
     width: 33.1px;
     height: 30px;
-    margin-left: 1245px;
-    margin-top: 35px;
-}
 
+    background-image: url(../recources/telegram.png);
+}
 /*/contact*/
