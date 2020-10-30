@@ -1,4 +1,4 @@
-# GitHub padges
+# GitHub pages
 https://tulesha.github.io/web-1Lab/
 
 # Лабораторная работа №1. Реализовать макет сайт-партфолио.
