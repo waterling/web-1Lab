@@ -89,8 +89,6 @@ body {
     background-position-x: 20%;
     background-position-y: 40%;
     background-repeat: no-repeat;
-
-    
 }
 
 header {
@@ -114,6 +112,10 @@ footer {
     width: 1519px;
     height: 136px;
     margin-top: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     background: #2D4D37;
 }
@@ -436,5 +438,30 @@ li {
     height: 30px;
 
     background-image: url(../recources/telegram.png);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 40%;
+    top: 40%;
+    width: 20%;
+    height: 10%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.modal-content {
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 /*/contact*/

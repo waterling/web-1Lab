@@ -83,3 +83,5 @@ function getTags(){
     }
     console.log(dict)
 }
+
+window.onclick = getTags
