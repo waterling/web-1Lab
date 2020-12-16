@@ -5,12 +5,12 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /* Убираем внутренние отступы */
 ol[class] {
-  padding: 0;
+    padding: 0;
 }
 
 /* Убираем внешние отступы */
@@ -26,36 +26,36 @@ figcaption,
 blockquote,
 dl,
 dd {
-  margin: 0;
+    margin: 0;
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
 body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
 ol[class] {
-  list-style: none;
+    list-style: none;
 }
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 a:not([class]) {
-  text-decoration-skip-ink: auto;
+    text-decoration-skip-ink: auto;
 }
 
 /* Упрощаем работу с изображениями */
 img {
-  max-width: 100%;
-  display: block;
+    max-width: 100%;
+    display: block;
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
 article > * + * {
-  margin-top: 1em;
+    margin-top: 1em;
 }
 
 /* Наследуем шрифты для инпутов и кнопок */
@@ -63,20 +63,20 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+    font: inherit;
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
-/*/Обнуление стилей css*/
 
+/*/Обнуление стилей css*/
 
 
 /*main*/
@@ -116,7 +116,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     background: #2D4D37;
 }
 
@@ -133,7 +133,7 @@ footer {
 
     background: #BCD775;
     border-radius: 11px;
-    
+
 }
 
 .historyBlock {
@@ -215,6 +215,7 @@ footer {
     padding-left: 36px;
     padding-top: 140px;
 }
+
 /*/blocks*/
 
 
@@ -272,7 +273,7 @@ q {
     width: 691px;
     height: 96px;
     margin-left: 134px;
-    margin-top: 25px; 
+    margin-top: 25px;
 
     font-family: 'Press Start 2P', cursive;
     font-style: normal;
@@ -409,6 +410,7 @@ li {
 
     color: #2D4D37;
 }
+
 /*/fonts*/
 
 /*contact*/
@@ -452,16 +454,57 @@ li {
     background-color: rgba(0, 0, 0, 0.8)
 }
 
-.modal-content {
-    margin: 15% auto;
-    padding: 20px;
-    width: 80%;
-}
-
 .close {
     color: #aaaaaa;
     float: right;
     font-size: 28px;
+    font-weight: bold;
+}
+
+.closeMsg {
+    color: black;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+.modalChat {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 25%;
+    top: 25%;
+    width: 50%;
+    height: 50%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+#chatMessages {
+    background-color: #BCD775;
+    overflow: auto;
+    height: 65%;
+    width: 95%;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+#msgTextArea {
+    width: 73%;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.botMessage {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.userMessage {
+    font-family: 'Quicksand', sans-serif;
+    font-style: normal;
     font-weight: bold;
 }
 /*/contact*/
