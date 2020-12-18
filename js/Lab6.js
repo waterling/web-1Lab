@@ -1,70 +1,61 @@
-window.onload = () => {
-    //Lab 6
-    let modal = document.getElementById('myModal')
-    let btn = document.getElementById('myBtn')
-    let span = document.getElementById('spanModal')
+window.onload = function() {
+    const popUp = document.getElementById("modal")
+    let btn = document.getElementById("btn")
+    let span = document.getElementById("closePopUp")
+    
+    let img = document.getElementsByClassName("icon")[0]
 
-    let spiritAnimal = document.getElementsByClassName("animalPre")[0]
-
-    let body = document.getElementsByTagName("body")[0]
-
-    btn.onclick = function () {
-        modal.style.display = "block"
+    btn.onclick = function() {
+        popUp.style.display = "block"
     }
 
-    span.onclick = function () {
-        modal.style.display = "none"
+    span.onclick = function() {
+        popUp.style.display = "none"
     }
 
-    spiritAnimal.onclick = function () {
-        if (body.style.backgroundColor === "rgb(80, 200, 120)") {
-            body.style.backgroundColor = "#ffffff"
-            body.style.backgroundImage = "url('recources/BackGround.png')"
-        } else {
-            body.style.backgroundImage = "none"
-            body.style.backgroundColor = "#50c878"
+    img.onclick = function() {
+        if (img.getAttribute("src") == "resources/Icon.png") {
+            img.setAttribute("src", "resources/Delphin.png")
         }
+        else {
+            img.setAttribute("src", "resources/Icon.png")
+        }
+        
     }
 
-    //Lab 7
-    let modalChat = document.getElementById('myChatModal')
-    let btnChat = document.getElementById('myChat')
-    let spanChat = document.getElementById('spanChat')
+    
+    //Lab7
+    let nouns = ['вы', 'сайт', 'звонок', 'телефон']
+    let adjs = ['Картофельный', 'Возможный', 'Внимательный']
+    let verbs = ['посетить', 'ввести', 'позвонить']
 
-    let btnSend = document.getElementById('btnSend')
-    let btnClear = document.getElementById('btnClear')
+    let btnChat = document.getElementById("btnChat")
+    let spanChat = document.getElementById("closeChat")
 
-    let adjectives = ['красивый', 'угрюмый', 'отвратный', 'угрожающий', 'добрый']
-    let nouns = ['единорог', 'медведь', 'заяц', 'хрен', 'киберпанк']
-    let verbs = ['убивает', 'любит', 'ненавидит', 'кайфует', 'играет']
+    const chat = document.getElementById("chat")
 
-    btnChat.onclick = function () {
-        modalChat.style.display = "block"
+    btnChat.onclick = function() {
+        chat.style.display = "block"
+        btnChat.style.display = "none"
     }
 
-    spanChat.onclick = function () {
-        modalChat.style.display = "none"
+    spanChat.onclick = function() {
+        chat.style.display = "none"
+        btnChat.style.display = "block"
     }
 
-    btnSend.onclick = function () {
-        let chatMessages = document.getElementById('chatMessages')
-        let msgTextArea = document.getElementById('msgTextArea')
 
-        let adjective = adjectives[Math.floor(Math.random()*adjectives.length)];
-        let noun = verbs[Math.floor(Math.random()*verbs.length)];
-        let verb = nouns[Math.floor(Math.random()*nouns.length)];
+    document.getElementById("send").onclick = function() {
+        let field = document.getElementById("messages")
+        let msgArea = document.getElementById("msgArea")
 
-        chatMessages.innerHTML = chatMessages.innerHTML + "<p class='userMessage'> User: " + msgTextArea.value + "</p>"
-        msgTextArea.value = ""
-
-        chatMessages.innerHTML = chatMessages.innerHTML + "<p class='botMessage'> Bot: " + adjective + ' ' + verb + ' ' + noun + "</p>"
-        chatMessages.scrollTop = chatMessages.scrollHeight;
-
+        field.innerHTML = field.innerHTML + "<p class='userMessage'>You: " + msgArea.value + "</p>"
+        msgArea.value = ""
+        field.innerHTML = field.innerHTML + "<p class='botMessage'>Bot: " + randomWord(adjs) + ' ' + randomWord(nouns) + ' ' + randomWord(verbs) + "</p>"
+        field.scrollTop = field.scrollHeight
     }
+}
 
-    btnClear.onclick = function () {
-        let chatMessages = document.getElementById('chatMessages')
-
-        chatMessages.innerHTML = ''
-    }
+let randomWord = function(array) {
+    return array[Math.floor(Math.random()*array.length)]
 }
